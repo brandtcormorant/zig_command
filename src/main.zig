@@ -18,7 +18,6 @@
 ///
 ///   const result = try cmd.parse(allocator, argv, &schema);
 ///   defer result.deinit();
-
 const std = @import("std");
 const Allocator = std.mem.Allocator;
 
@@ -465,7 +464,7 @@ pub fn formatHelp(allocator: Allocator, command: *const Command, parents: []cons
     }
 
     var total_len: usize = 0;
-s
+
     for (parts.items) |p| {
         total_len += p.len;
     }
