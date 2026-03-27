@@ -338,6 +338,7 @@ pub fn validate(result: *const ParseResult) ?[]const u8 {
             return "Missing required argument";
         }
     }
+
     return null;
 }
 
